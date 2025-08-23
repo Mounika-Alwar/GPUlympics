@@ -83,7 +83,7 @@ else:
         "Findings and Insights",
         "Model Explanation",
         "Limitations",
-        "Future Use"
+        "Future Work"
     ])
 
 
@@ -301,7 +301,7 @@ else:
         - **Normalization Bias**: While normalization reduces GPU-specific bias, it may also mask edge-case behaviors or outlier performance patterns.
         """)
 
-    if section == "Future Use":
+    if section == "Future Work":
         st.subheader("Future Work")
         st.write("""
         To improve accuracy and real-world applicability, future iterations of this project could include:
