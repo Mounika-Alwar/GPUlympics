@@ -11,7 +11,7 @@ st.markdown("Interactive System that benchmarks and predicts GPU efficiency for 
 
 mode = st.radio("Select Mode: ",["Gamification Mode","DataScientist Mode"])
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://gpulympics-1.onrender.com/predict"
 
 df = pd.read_csv("data/synthetic_gpu_training.csv")
 df_avg = df.groupby(['gpu_type', 'model_size', 'batch_size', 'seq_length', 'learning_rate'])[['training_time_hrs', 'energy_kwh', 'efficiency_tok_per_watt']].mean().reset_index()
