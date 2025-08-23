@@ -6,7 +6,7 @@ import os
 import pandas as pd
 from utils import map_model_size
 
-df = pd.read_csv("../synthetic_gpu_training.csv")
+df = pd.read_csv("data/synthetic_gpu_training.csv")
 
 # Define preprocessing pipeline
 ordinal_transformer = FunctionTransformer(map_model_size,validate=False)

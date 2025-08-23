@@ -13,7 +13,7 @@ mode = st.radio("Select Mode: ",["Gamification Mode","DataScientist Mode"])
 
 API_URL = "http://127.0.0.1:8000/predict"
 
-df = pd.read_csv("../synthetic_gpu_training.csv")
+df = pd.read_csv("data/synthetic_gpu_training.csv")
 df_avg = df.groupby(['gpu_type', 'model_size', 'batch_size', 'seq_length', 'learning_rate'])[['training_time_hrs', 'energy_kwh', 'efficiency_tok_per_watt']].mean().reset_index()
 
 if mode == "Gamification Mode":
